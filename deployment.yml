@@ -1,0 +1,10 @@
+---
+- hosts: all
+  tasks:
+  - name: copy files to destination
+    become: yes
+    copy:
+      src: .
+      dest: /var/www/html 
+ 
+  
